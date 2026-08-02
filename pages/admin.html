@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panel Administrador | YESHÚA SMARTPHONE</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>Panel Administrador</h1>
+
+</header>
+
+
+<main>
+
+    <section class="admin">
+
+        <h2>Agregar nuevo producto</h2>
+
+
+        <form>
+
+
+            <label>
+                Nombre del producto:
+            </label>
+
+            <input id="nombre" placeholder="Ej: Samsung Galaxy A56">
+
+
+            <label>
+                Precio:
+            </label>
+
+           <input id="precio" type="number" placeholder="Ej: 25000">
+
+
+            <label>
+                Categoría:
+            </label>
+
+           <select id="categoria">
+
+                <option>Celulares</option>
+                <option>Accesorios</option>
+                <option>Electrodomésticos</option>
+                <option>Ofertas</option>
+
+            </select>
+
+
+            <label>
+                Imagen del producto:
+            </label>
+
+            <input id="imagen" type="file">
+
+
+            <label>
+                Descripción:
+            </label>
+
+            <textarea id="descripcion" placeholder="Descripción del producto"></textarea>
+
+
+           <button id="publicar" type="submit">
+                Publicar producto
+            </button>
+
+
+        </form>
+<hr>
+
+<h2>Productos publicados</h2>
+
+<div id="lista-admin">
+
+</div>
+<div id="editar-producto" style="display:none;">
+
+    <h2>Editar producto</h2>
+
+    <input id="editarNombre" placeholder="Nombre">
+
+    <input id="editarPrecio" placeholder="Precio">
+
+    <select id="editarCategoria">
+        <option>Celulares</option>
+        <option>Accesorios</option>
+        <option>Electrodomésticos</option>
+        <option>Ofertas</option>
+    </select>
+
+    <textarea id="editarDescripcion" placeholder="Descripción"></textarea>
+
+    <button id="guardarEdicion">
+        Guardar cambios
+    </button>
+
+</div>
+    </section>
+
+
+</main>
+
+
+<script src="../js/app.js"></script>
+<script type="module" src="../js/admin.js"></script>
+<script type="module" src="../js/adminProductos.js"></script>
+<script type="module" src="../js/protegerAdmin.js"></script>
+</body>
+
+</html>
