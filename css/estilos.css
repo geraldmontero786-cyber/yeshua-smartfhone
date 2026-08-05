@@ -642,3 +642,38 @@ nav a{
 .contacto-reparaciones a[href*="facebook"]{
     color:#1877f2;
 }
+/* Reparaciones en celulares */
+
+@media (max-width: 600px){
+
+    .contacto-reparaciones{
+        width:90%;
+        margin:25px auto;
+        padding:20px;
+        border-radius:10px;
+    }
+
+
+    .contacto-reparaciones h2{
+        font-size:22px;
+    }
+
+
+    .contacto-reparaciones h3{
+        font-size:19px;
+    }
+
+
+    .contacto-reparaciones p{
+        font-size:15px;
+        line-height:1.5;
+    }
+
+
+    .contacto-reparaciones a[href*="wa.me"]{
+        display:block;
+        width:80%;
+        margin:15px auto;
+    }
+
+}
