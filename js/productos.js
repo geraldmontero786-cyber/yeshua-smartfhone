@@ -36,7 +36,6 @@ async function mostrarProductos() {
 
     <p>${producto.descripcion}</p>
 
-    <p>Categoría: ${producto.categoria}</p>
 
     <p>Precio: RD$ ${producto.precio}</p>
 
